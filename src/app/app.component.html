@@ -1,18 +1,22 @@
+<div >
+<header class="w3-container w3-blue-grey" style="padding:20px 10px 20px 10px;">
+  <div style="padding-bottom: 10px">
+    <div style="float: left; width: 50%;"><i class="fa fa-bars fa-2x" aria-hidden="true"></i><span style="font-size: 22px; padding-left: 10px">The Library</span></div>
+        <div style="float: left; width: 50%; text-align: right"><i class="fa fa-bell-o fa-2x" aria-hidden="true"></i><span class="w3-badge w3-red" style="position: relative; top:-15px; left: -15px;">9</span><i class="fa fa-user fa-2x" aria-hidden="true"></i></div>
+        <div style="clear: both"></div>
+  </div>
+  <input class="w3-input w3-border w3-round-large w3-light-white" type="text">
+</header>
+
 <h1>
-  {{title}}
+ <!-- {{title}} -->
+  <router-outlet></router-outlet>
 </h1>
 
-<nav class="w3-sidenav w3-white w3-card-2" style="display:none" id="mySidenav">
-  <a href="javascript:void(0)" (click)="w3_close()"
-     class="w3-closenav w3-large">Close &times;</a>
-  <a href="#">Link 1</a>
-  <a href="#">Link 2</a>
-  <a href="#">Link 3</a>
-  <a href="#">Link 4</a>
-  <a href="#">Link 5</a>
-</nav>
+<footer class="w3-container w3-blue-grey">
+  <h5>The Library </h5>
+  <p>&copy; 2017 </p>
+</footer>
 
-<header class="w3-container w3-teal">
-  <span class="w3-opennav w3-xlarge" (click)="w3_open()">&#9776;</span>
-  <h1>My Header</h1>
-</header>
+</div>
+
